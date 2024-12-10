@@ -13,3 +13,18 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+// grab the star image /
+// grab the slider / 
+// create a function - where position on slider represents number of stars
+// create eventlistener - using correct type - 
+
+const StarImage = document.getElementById("stars");
+const slider = document.getElementById("starSlider");
+
+function sliderPosition(){
+ StarImage = slider.value
+}
+
+slider.addEventListener("input", sliderPosition);
+
