@@ -17,14 +17,48 @@ Expected Outcomes:
 // grab the star image /
 // grab the slider / 
 // create a function - where position on slider represents number of stars
+// we want the function to take the text of ★ and repeat it as per the condition/value of the slider
 // create eventlistener - using correct type - 
 
-const StarImage = document.getElementById("stars");
+
+// grab the slider 
 const slider = document.getElementById("starSlider");
 
+// grab the star image
+const StarImage = document.getElementById("stars");
+ 
+
+
 function sliderPosition(){
- StarImage = slider.value
+//get the current slider value
+const sliderNumber = slider.value;
+//repeating the number of stars based on the slider value
+StarImage.textContent = "★".repeat(sliderNumber);
+console.log(star);
+
 }
 
 slider.addEventListener("input", sliderPosition);
 
+
+
+
+//COPY OF CODE THAT PARTIALLY WORKS
+// // grab the slider 
+// const slider = document.getElementById("starSlider");
+
+// // grab the star image
+// const StarImage = document.getElementById("stars");
+ 
+
+
+// function sliderPosition(){
+// //get the current slider value
+// const sliderNumber = slider.value;
+// //repeating the number of stars based on the slider value
+// StarImage.textContent = "★".repeat(sliderNumber);
+// console.log(star);
+
+// }
+
+// slider.addEventListener("input", sliderPosition);
