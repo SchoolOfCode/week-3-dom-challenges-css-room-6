@@ -25,7 +25,7 @@ Expected Outcomes:
 const slider = document.getElementById("starSlider");
 
 // grab the star image
-const StarImage = document.getElementById("stars");
+const StarImage = document.querySelector(".star-icon"); //selected the class selector of the span element instead of the div and it worked
  
 
 
@@ -40,25 +40,3 @@ console.log(star);
 
 slider.addEventListener("input", sliderPosition);
 
-
-
-
-//COPY OF CODE THAT PARTIALLY WORKS
-// // grab the slider 
-// const slider = document.getElementById("starSlider");
-
-// // grab the star image
-// const StarImage = document.getElementById("stars");
- 
-
-
-// function sliderPosition(){
-// //get the current slider value
-// const sliderNumber = slider.value;
-// //repeating the number of stars based on the slider value
-// StarImage.textContent = "★".repeat(sliderNumber);
-// console.log(star);
-
-// }
-
-// slider.addEventListener("input", sliderPosition);

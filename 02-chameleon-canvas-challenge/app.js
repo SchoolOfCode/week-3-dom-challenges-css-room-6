@@ -13,3 +13,20 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+// Place your plan and solution below!
+// Grab the button element /
+// Grab the canvas
+// create a function - change color of canvas
+// create an event- linking the color button and the canvas
+// need an event type that changes the color on the color picker / when you click away
+
+const colorButton = document.getElementById('colorPicker'); //grabbed the button color element
+const imgCanvas = document.getElementById('canvas'); //grabbed the canvas
+
+function fillCanvasWithColor () {
+  imgCanvas.style.backgroundColor = colorButton.value; //changes the background color to be the same color as what the user has picked
+}
+
+colorButton.addEventListener("input", fillCanvasWithColor); //the input event updates in real time as we interact with the color picker
+
+  
